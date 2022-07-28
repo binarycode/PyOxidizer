@@ -207,7 +207,7 @@ pub struct HeaderRange {
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct Entries {
     #[serde(rename = "entry")]
-    pub entries: Vec<PackageEntry>,
+    pub entries: Option<Vec<PackageEntry>>,
 }
 
 /// Describes a package relationship.
