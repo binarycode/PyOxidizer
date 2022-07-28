@@ -49,7 +49,7 @@ pub struct RepoMdData {
     /// Size in bytes of the file as stored in the repository.
     pub size: Option<u64>,
     /// Time file was created/modified.
-    pub timestamp: Option<u64>,
+    pub timestamp: Option<f64>,
     /// Content checksum of the decoded (often decompressed) file.
     #[serde(rename = "open-checksum")]
     pub open_checksum: Option<Checksum>,
