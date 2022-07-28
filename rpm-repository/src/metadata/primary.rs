@@ -22,7 +22,7 @@ pub struct Primary {
 
     /// `<package>` elements in this document.
     #[serde(rename = "package")]
-    pub packages: Vec<Package>,
+    pub packages: Option<Vec<Package>>,
 }
 
 impl Primary {
